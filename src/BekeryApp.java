@@ -1,22 +1,21 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class BakeryApp {
+public class BekeryApp {
     public static void main(String[] args){
         String answer;
         String sort;
 
         Scanner keyboard = new Scanner(System.in);
 
-        ArrayList<BakedGoods> bakery = new ArrayList<BakedGoods>();
+        ArrayList<BekedGoods> bakery = new ArrayList<BekedGoods>();
         ArrayList<String> dietMuffin = new ArrayList<String>();
         dietMuffin.add("Soybean");
         dietMuffin.add("Sugar");
         dietMuffin.add("Eggs");
         dietMuffin.add("Gluten");
 
-        BakedGoods muffin = new BakedGoods("Muffin", 3.0, 2, "07132021", dietMuffin);
+        BekedGoods muffin = new BekedGoods("Muffin", 3.0, 2, "07132021", dietMuffin);
         bakery.add(muffin);
 
         ArrayList<String> dietBananaBread = new ArrayList<String>();
@@ -28,7 +27,7 @@ public class BakeryApp {
         dietBananaBread.add("Evaporated Cane Juice");
         dietBananaBread.add("Corn Starch");
         dietBananaBread.add("Eggs");
-        BakedGoods bananaBread = new BakedGoods("Banana Bread", 5.95, 5, "08132022", dietBananaBread);
+        BekedGoods bananaBread = new BekedGoods("Banana Bread", 5.95, 5, "08132022", dietBananaBread);
         bakery.add(bananaBread);
 
         ArrayList<String> dietCinnamonRaisinBread = new ArrayList<String>();
@@ -41,7 +40,7 @@ public class BakeryApp {
         dietCinnamonRaisinBread.add("cinnamon");
         dietCinnamonRaisinBread.add("salt");
 
-        BakedGoods cinnamonRaisinBread = new BakedGoods("Cinnamon Raisin Bread", 5.15, 7, "07172021", dietCinnamonRaisinBread);
+        BekedGoods cinnamonRaisinBread = new BekedGoods("Cinnamon Raisin Bread", 5.15, 7, "07172021", dietCinnamonRaisinBread);
         bakery.add(cinnamonRaisinBread);
 
         ArrayList<String> dietHamburgerBuns = new ArrayList<String>();
@@ -53,7 +52,7 @@ public class BakeryApp {
         dietHamburgerBuns.add("palm oil");
         dietHamburgerBuns.add("xanthan gum");
 
-        BakedGoods hamburgerBuns = new BakedGoods("Hamburger Buns", 5.99, 15, "08012021", dietHamburgerBuns);
+        BekedGoods hamburgerBuns = new BekedGoods("Hamburger Buns", 5.99, 15, "08012021", dietHamburgerBuns);
         bakery.add(hamburgerBuns);
 
         ArrayList<String> dietSavoryRolls = new ArrayList<String>();
@@ -66,7 +65,7 @@ public class BakeryApp {
         dietSavoryRolls.add("canola oil");
         dietSavoryRolls.add("olive oil");
 
-        BakedGoods savoryRolls = new BakedGoods("Savory Rolls", 3, 5, "08282021",dietSavoryRolls);
+        BekedGoods savoryRolls = new BekedGoods("Savory Rolls", 3, 5, "08282021",dietSavoryRolls);
         bakery.add(savoryRolls);
 
         ArrayList<String> dietWhiteBread = new ArrayList<String>();
@@ -77,7 +76,7 @@ public class BakeryApp {
         dietWhiteBread.add("yeast");
         dietWhiteBread.add("palm oil");
 
-        BakedGoods whiteBread = new BakedGoods("White Bread", 11.95, 18, "09012021",dietWhiteBread);
+        BekedGoods whiteBread = new BekedGoods("White Bread", 11.95, 18, "09012021",dietWhiteBread);
         bakery.add(whiteBread);
 
         ArrayList<String> dietChocolateCake = new ArrayList<>();
@@ -90,7 +89,7 @@ public class BakeryApp {
         dietChocolateCake.add("vanilla");
         dietChocolateCake.add("alcohol");
 
-        BakedGoods chocolateCake = new BakedGoods("Chocolate Cake", 64.95, 10, "08112021", dietChocolateCake);
+        BekedGoods chocolateCake = new BekedGoods("Chocolate Cake", 64.95, 10, "08112021", dietChocolateCake);
         bakery.add(chocolateCake);
 
         ArrayList<String> dietRedVelvetCake = new ArrayList<>();
@@ -101,7 +100,7 @@ public class BakeryApp {
         dietRedVelvetCake.add("eggs");
         dietRedVelvetCake.add("vanilla");
 
-        BakedGoods redVelvetCake = new BakedGoods("Red Velvet Cake", 64.95, 4, "07282021", dietRedVelvetCake);
+        BekedGoods redVelvetCake = new BekedGoods("Red Velvet Cake", 64.95, 4, "07282021", dietRedVelvetCake);
         bakery.add(redVelvetCake);
 
         ArrayList<String> dietLemonCake = new ArrayList<>();
@@ -112,7 +111,7 @@ public class BakeryApp {
         dietLemonCake.add("eggs");
         dietLemonCake.add("vanilla");
 
-        BakedGoods lemonCake = new BakedGoods("Lemon Cake", 64.95, 7, "07282021", dietLemonCake);
+        BekedGoods lemonCake = new BekedGoods("Lemon Cake", 64.95, 7, "07282021", dietLemonCake);
         bakery.add(lemonCake);
 
         ArrayList<String> dietStrawberryCake = new ArrayList<>();
@@ -123,7 +122,7 @@ public class BakeryApp {
         dietStrawberryCake.add("vanilla");
         dietStrawberryCake.add("alcohol");
 
-        BakedGoods strawberryCake = new BakedGoods("Strawberry Cake", 64.95, 8, "07302021", dietStrawberryCake);
+        BekedGoods strawberryCake = new BekedGoods("Strawberry Cake", 64.95, 8, "07302021", dietStrawberryCake);
         bakery.add(strawberryCake);
 
         ArrayList<String> dietMintChocolateCookie = new ArrayList<String>();
@@ -134,7 +133,7 @@ public class BakeryApp {
         dietMintChocolateCookie.add("eggs");
         dietMintChocolateCookie.add("flour");
 
-        BakedGoods mintChocolateCookie = new BakedGoods("Mint Chocolate Cookies", 19.95, 3, "07302021", dietMintChocolateCookie);
+        BekedGoods mintChocolateCookie = new BekedGoods("Mint Chocolate Cookies", 19.95, 3, "07302021", dietMintChocolateCookie);
         bakery.add(mintChocolateCookie);
 
         ArrayList<String> dietSnowballCookies = new ArrayList<String>();
@@ -145,7 +144,7 @@ public class BakeryApp {
         dietSnowballCookies.add("baking soda");
         dietSnowballCookies.add("salt");
 
-        BakedGoods snowballCookies = new BakedGoods("Snowball Cookies", 19.95, 4, "07282021", dietSnowballCookies);
+        BekedGoods snowballCookies = new BekedGoods("Snowball Cookies", 19.95, 4, "07282021", dietSnowballCookies);
         bakery.add(snowballCookies);
 
         ArrayList<String> dietCookieDoughTruffles = new ArrayList<>();
@@ -157,7 +156,7 @@ public class BakeryApp {
         dietCookieDoughTruffles.add("salt");
         dietCookieDoughTruffles.add("potato flour");
 
-        BakedGoods cookieDoughTruffles = new BakedGoods("Cookie Dough Truffles", 19.95, 6, "07282021", dietCookieDoughTruffles);
+        BekedGoods cookieDoughTruffles = new BekedGoods("Cookie Dough Truffles", 19.95, 6, "07282021", dietCookieDoughTruffles);
         bakery.add(cookieDoughTruffles);
 
         ArrayList<String> dietPumpkinDonut = new ArrayList<>();
@@ -170,7 +169,7 @@ public class BakeryApp {
         dietPumpkinDonut.add("vanilla");
         dietPumpkinDonut.add("palm oil");
 
-        BakedGoods pumpkinDonut = new BakedGoods("Pumpkin Donut", 14.95, 1, "07232021", dietPumpkinDonut);
+        BekedGoods pumpkinDonut = new BekedGoods("Pumpkin Donut", 14.95, 1, "07232021", dietPumpkinDonut);
         bakery.add(pumpkinDonut);
 
         ArrayList<String> dietTealOmbreCake = new ArrayList<>();
@@ -183,7 +182,7 @@ public class BakeryApp {
         dietTealOmbreCake.add("banana");
         dietTealOmbreCake.add("pure vanilla extract");
 
-        BakedGoods tealOmbreCake = new BakedGoods("Teal Ombre Cake", 27.00, 3, "07182021", dietTealOmbreCake);
+        BekedGoods tealOmbreCake = new BekedGoods("Teal Ombre Cake", 27.00, 3, "07182021", dietTealOmbreCake);
         bakery.add(tealOmbreCake);
 
         ArrayList<String> dietWonderWomanCake = new ArrayList<>();
@@ -195,7 +194,7 @@ public class BakeryApp {
         dietWonderWomanCake.add("cornstarch");
         dietWonderWomanCake.add("xanthan gum");
 
-        BakedGoods wonderWomanCake = new BakedGoods("Wonder Woman Cake", 29.00, 5, "07212021", dietWonderWomanCake);
+        BekedGoods wonderWomanCake = new BekedGoods("Wonder Woman Cake", 29.00, 5, "07212021", dietWonderWomanCake);
         bakery.add(wonderWomanCake);
 
 
@@ -209,7 +208,7 @@ public class BakeryApp {
             System.out.println("What ingredients would you like to sort by?");
             sort = keyboard.nextLine();
             for (int i = 0; i < bakery.size(); i++){
-                BakedGoods temp = bakery.get(i);
+                BekedGoods temp = bakery.get(i);
                 ArrayList<String> tempArray = temp.getDiet();
                 for (String tempString: tempArray){
                     if (tempString.equalsIgnoreCase(sort)){
@@ -220,7 +219,7 @@ public class BakeryApp {
 
         }else {
             for (int i = 0; i < bakery.size(); i++ ){
-                BakedGoods temp = bakery.get(i);
+                BekedGoods temp = bakery.get(i);
                 System.out.println(temp.getName());
             }
 

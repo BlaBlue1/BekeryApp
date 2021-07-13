@@ -5,7 +5,7 @@ create ArrayList of baked goods with variables name, price, expiration date, die
     if answer is yes
         ask what are their diet restrictions
         get dietRestrictions
-        display baked goods that do not have diet rescritions
+        display beked goods that do not have diet rescritions
 
     else display all baked goods
 

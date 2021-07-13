@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BakeryApp.iml" filepath="$PROJECT_DIR$/BakeryApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BekeryApp.iml" filepath="$PROJECT_DIR$/BekeryApp.iml" />
     </modules>
   </component>
 </project>

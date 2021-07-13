@@ -1,11 +1,11 @@
 import java.util.ArrayList;
-public class BakedGoods {
+public class BekedGoods {
     private String name, expDate;
     private double price;
     private int quantityStock;
     private ArrayList<String> diet;
 
-    public BakedGoods(){
+    public BekedGoods(){
         this.name = "";
         this.price = 0;
         this.quantityStock = 0;
@@ -13,7 +13,7 @@ public class BakedGoods {
         this.diet = new ArrayList<String>();
 
     }
-    public BakedGoods(String name, double price, int quantityStock, String expDate, ArrayList<String> diet){
+    public BekedGoods(String name, double price, int quantityStock, String expDate, ArrayList<String> diet){
         this.name = name;
         this.price = price;
         this.quantityStock = quantityStock;
